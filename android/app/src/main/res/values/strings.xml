@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Aprendiendo</string>
+    <string name="title_activity_main">Aprendiendo</string>
+    <string name="package_name">io.ionic.aprendiendo</string>
+    <string name="custom_url_scheme">io.ionic.aprendiendo</string>
+</resources>

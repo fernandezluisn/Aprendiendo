@@ -1,7 +1,8 @@
 {
   "name": "Aprendiendo",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
