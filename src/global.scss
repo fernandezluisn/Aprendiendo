@@ -37,10 +37,7 @@
    
   }
 
-  ion-img{
-    margin-top: 10%;
-    height: 40%;
-  }
+  
 
   ion-button {
     --color: rgb(247, 244, 244);
@@ -65,6 +62,12 @@
     width: 40%;
     margin-top: 1rem; 
     height: 5rem;
+  }
+
+  ion-img.iconito{
+      height: 3rem;
+      position: left, absolute;
+      
   }
 
   select{
