@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AuthServiceService} from '../../servicios/auth-service.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -12,12 +13,13 @@ export class LoginPage implements OnInit {
 
   email:string;
   password:string;
-
+  loading:any;
   
 
   
   
-  constructor(private servicio:AuthServiceService, private router:Router, public alertController: AlertController ) { 
+  constructor(private servicio:AuthServiceService, private router:Router, public alertController: AlertController, 
+    private loadingCtrl: LoadingController ) { 
     this.email="";
     this.password="";
 
@@ -26,11 +28,22 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  async presentLoading(message: string) {
+    this.loading = await this.loadingCtrl.create({
+        message,
+        spinner: "crescent",
+        duration: 2500
+    });
+    return this.loading.present();
+
+    
+}
+
   async alertar(mensaje:string){
     const alert= this.alertController.create({
       cssClass: 'danger-alert-btn',
       header: 'Error',
-      subHeader: 'Subtitle',
+      subHeader: 'Datos incorrectos',
       message: mensaje,
       buttons: ['OK']
     });
@@ -39,11 +52,18 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.servicio.loginUser(this.email, this.password).then(res=>{
-      this.router.navigate(['home']);
-    }).catch(error=>{
-      this.alertar(error.message);      
-    });
+    if(this.password.length>5 && this.email.length>9)
+    {
+      this.presentLoading('Aguarde...');
+      this.servicio.loginUser(this.email, this.password).then(res=>{
+        this.router.navigate(['home']);
+      }).catch(error=>{
+        this.alertar(error.message);      
+      });
+    }else{
+      this.alertar("El password y el correo no corresponden.");
+    }
+    
   }
 
   carg2(opcion:string){

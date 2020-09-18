@@ -27,7 +27,7 @@
 
 :root {
     /* Set the background of the entire app */
-    --ion-background-color: rgb(115, 141, 211);
+    --ion-background-color: rgb(68, 214, 250);
   
     /* Set the font family of the entire app */
     --ion-font-family:cursive, sans-serif!important;
@@ -64,9 +64,8 @@
     height: 5rem;
   }
 
-  ion-img.iconito{
-      height: 3rem;
-      position: left, absolute;
+  ion-img{
+      height: 23rem;     
       
   }
 
@@ -110,4 +109,24 @@
     --ion-border: 1rem black solid;
     --ion-background-color: rgb(135, 162, 192);
     --ion-font-family:bold, "roboto";   
+}
+
+ion-avatar.verde{
+  border: green 0.4rem solid;
+}
+
+ion-avatar.rosa{
+  border: rgb(219, 137, 137) 0.4rem solid;
+}
+
+ion-avatar.amarillo{
+  border: rgb(217, 230, 41) 0.4rem solid;
+}
+
+ion-avatar.violeta{
+  border: rgb(65, 9, 65) 0.4rem solid;
+}
+
+ion-avatar.naranja{
+  border: rgb(228, 110, 43) 0.4rem solid;
 }
