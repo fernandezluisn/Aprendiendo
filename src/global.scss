@@ -52,6 +52,14 @@
     height: 3rem;
   }
 
+  ion-fab{
+    margin: 4%;
+  }
+
+  .fondoBlanco{
+    --ion-background-color:rgba(255, 255, 255, 0.966); 
+  }
+
   ion-button.centrar {
     --color: black;
     --border:solid black 2rem;
@@ -64,8 +72,26 @@
     height: 5rem;
   }
 
+  ion-grid{
+    margin-top: 6rem;
+    margin-left: 5rem;
+    width: 24rem;
+    height: 45rem;
+    --ion-background-color:rgba(255, 255, 255, 0.966); 
+  }
+
+  ion-col{
+    width: 8rem;
+    
+  }
+
+  ion-row{
+    height: 9rem;
+    --ion-background-color:rgba(255, 255, 255, 0.966); 
+  }
+
   ion-img{
-      height: 23rem;     
+      height: 27rem;    
       
   }
 
@@ -94,6 +120,7 @@
       border: 0.1rem solid red;
       --ion-background-color: white;
       --ion-text-color: black;
+      border-radius: 6rem;
   }
 
   .alert-message.sc-ion-alert-md{

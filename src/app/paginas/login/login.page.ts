@@ -56,9 +56,9 @@ export class LoginPage implements OnInit {
     {
       this.presentLoading('Aguarde...');
       this.servicio.loginUser(this.email, this.password).then(res=>{
-        this.router.navigate(['home']);
+        this.router.navigate(['central']);
       }).catch(error=>{
-        this.alertar(error.message);      
+        this.alertar("Los datos ingresados no son correctos");      
       });
     }else{
       this.alertar("El password y el correo no corresponden.");

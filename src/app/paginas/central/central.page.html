@@ -1,0 +1,100 @@
+
+
+<ion-content >
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      Tema
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button (click)="carg1('Animales')">
+        <ion-img src="../assets/animales.jpg"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="carg1('Numeros')">
+        <ion-img src="../assets/numeros.jpg"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="carg1('Colores')">
+        <ion-img src="../assets/colores.png"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <div class="fondoBlanco">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        {{texto1}}
+      </ion-col>
+      <ion-col>
+        <ion-avatar><img src={{img1}}></ion-avatar>
+      </ion-col>
+      <ion-col>
+        ion-col
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        {{texto2}}
+      </ion-col>
+      <ion-col>
+        <ion-avatar><img src={{img2}}></ion-avatar>
+      </ion-col>
+      <ion-col>
+        ion-col
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        {{texto3}}
+      </ion-col>
+      <ion-col>
+        <ion-avatar><img src={{img3}}></ion-avatar>
+      </ion-col>
+      <ion-col>
+        ion-col
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        {{texto4}}
+      </ion-col>
+      <ion-col>
+        <ion-avatar><img src={{img4}}></ion-avatar>
+      </ion-col>
+      <ion-col>
+        ion-col
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        {{texto5}}
+      </ion-col>
+      <ion-col>
+        <ion-avatar><img src={{img5}}></ion-avatar>
+      </ion-col>
+      <ion-col>
+        ion-col
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+<!-- fab placed to the top end -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    Idioma
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button (click)="carg2('Espanol')">
+      <ion-img src="../assets/españa.jpg"></ion-img>
+    </ion-fab-button>
+    <ion-fab-button (click)="carg2('Portugues')">
+      <ion-img src="../assets/portugues.jpg"></ion-img>
+    </ion-fab-button>
+    <ion-fab-button (click)="carg2('Ingles')">
+      <ion-img src="../assets/Bandera-Reino-Unido-1.jpg"></ion-img>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+</ion-content>
