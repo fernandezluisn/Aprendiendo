@@ -1,4 +1,8 @@
-
+<ion-header>
+  <ion-toolbar>
+    <ion-title (click)="cerrar">Cerrar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content >
   <ion-fab vertical="top" horizontal="start" slot="fixed">
@@ -17,69 +21,29 @@
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
-  <div class="fondoBlanco">
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        {{texto1}}
-      </ion-col>
-      <ion-col>
-        <ion-avatar><img src={{img1}}></ion-avatar>
-      </ion-col>
-      <ion-col>
-        ion-col
-      </ion-col>
-    </ion-row>
+  
+  <div>
+  
+    <ion-button id="btn1" class="vertical" (click)="btn1A()">
+        <ion-img src={{img1}}></ion-img>
+    </ion-button>
 
-    <ion-row>
-      <ion-col>
-        {{texto2}}
-      </ion-col>
-      <ion-col>
-        <ion-avatar><img src={{img2}}></ion-avatar>
-      </ion-col>
-      <ion-col>
-        ion-col
-      </ion-col>
-    </ion-row>
+    <ion-button id="btn2" class="vertical" (click)="btn2A()">
+        <ion-img src={{img2}}></ion-img>
+      </ion-button >
 
-    <ion-row>
-      <ion-col>
-        {{texto3}}
-      </ion-col>
-      <ion-col>
-        <ion-avatar><img src={{img3}}></ion-avatar>
-      </ion-col>
-      <ion-col>
-        ion-col
-      </ion-col>
-    </ion-row>
+        <ion-button id="btn3" class="vertical" (click)="btn3A()">
+        <ion-img src={{img3}}></ion-img>
+      </ion-button>
 
-    <ion-row>
-      <ion-col>
-        {{texto4}}
-      </ion-col>
-      <ion-col>
-        <ion-avatar><img src={{img4}}></ion-avatar>
-      </ion-col>
-      <ion-col>
-        ion-col
-      </ion-col>
-    </ion-row>
+        <ion-button id="btn4"  class="vertical" (click)="btn4A()">
+        <ion-img src={{img4}}></ion-img>
+      </ion-button>
 
-    <ion-row>
-      <ion-col>
-        {{texto5}}
-      </ion-col>
-      <ion-col>
-        <ion-avatar><img src={{img5}}></ion-avatar>
-      </ion-col>
-      <ion-col>
-        ion-col
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</div>
+        <ion-button id="btn5" class="vertical" (click)="btn5A()">
+        <ion-img src={{img5}}></ion-img>
+      </ion-button>
+  </div>
 <!-- fab placed to the top end -->
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button>

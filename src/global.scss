@@ -72,23 +72,13 @@
     height: 5rem;
   }
 
-  ion-grid{
-    margin-top: 6rem;
-    margin-left: 5rem;
-    width: 24rem;
-    height: 45rem;
+  
+
+  ion-avatar{
     --ion-background-color:rgba(255, 255, 255, 0.966); 
   }
 
-  ion-col{
-    width: 8rem;
-    
-  }
-
-  ion-row{
-    height: 9rem;
-    --ion-background-color:rgba(255, 255, 255, 0.966); 
-  }
+  
 
   ion-img{
       height: 27rem;    
@@ -117,7 +107,7 @@
       margin-top: 1rem;
       width: 70%;
       margin-left: 15%;
-      border: 0.1rem solid red;
+      
       --ion-background-color: white;
       --ion-text-color: black;
       border-radius: 6rem;
@@ -157,3 +147,5 @@ ion-avatar.violeta{
 ion-avatar.naranja{
   border: rgb(228, 110, 43) 0.4rem solid;
 }
+
+

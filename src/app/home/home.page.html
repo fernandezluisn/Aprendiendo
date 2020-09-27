@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Ingresar</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content>
+    <ion-item>
+      <ion-label>
+        Correo electronico
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Contraseña
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-button class="centrar" (click)="login()">Entrar</ion-button>
+    </ion-item-divider>
+
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <ion-avatar class="amarillo" style="margin-top: 2%; margin-left: 0.5rem;" (click)="carg2('Usuario')"><img src="../assets/usuario.png" alt="8rem"></ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-avatar class="rosa" style="margin-top: 2%; margin-left: 0.5rem;" (click)="carg2('Tester')"><img src="../assets/tester.png" alt="8rem"></ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-avatar class="naranja" style="margin-top: 2%; margin-left: 0.5rem;" (click)="carg2('Admin')"><img src="../assets/administrador.png" alt="8rem"></ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-avatar class="verde" style="margin-top: 2%; margin-left: 0.5rem;" (click)="carg2('Invitado')"><img src="../assets/invitado.png" alt="8rem"></ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-avatar class="violeta" style="margin-top: 2%; margin-left: 0.5rem;" (click)="carg2('Crear nuevo usuario')"><img src="../assets/nuevoUsuario.png" alt="8rem"></ion-avatar>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-img src="../assets/libro.png"></ion-img>
+
+    
+  </ion-content>
+
+
+
+
